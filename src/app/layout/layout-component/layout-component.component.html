@@ -4,7 +4,7 @@
   <mat-icon>account_box</mat-icon>
   <button mat-button [matMenuTriggerFor]="menu"> {{this.nombre}} {{this.apellido}} </button>
   <mat-menu #menu="matMenu">
-    <button (click)="logout()" mat-menu-item>Logout</button>
+    <button (click)="logout()" mat-menu-item>Salir</button>
   </mat-menu>
 </mat-toolbar>
 <router-outlet></router-outlet>
