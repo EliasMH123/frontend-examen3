@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 400px;
+    align-content: flex-end;
+    margin-left: 250px;
+    margin-top: 170px;
+    border-style: double;
+    border-color: rgb(11, 53, 131);
+    border-radius: 20%;
+}
+  mat-card-actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+  }

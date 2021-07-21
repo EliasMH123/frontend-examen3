@@ -21,12 +21,19 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatTableModule } from '@angular/material/table';
+import { MatTableModule, MatTable } from '@angular/material/table';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { LayoutComponentComponent } from './layout/layout-component/layout-component.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { MatChipsModule } from '@angular/material/chips';
+import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -35,7 +42,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     AddArchivoComponent,
     HomeComponentComponent,
     LoginComponentComponent,
-    AddCorreoComponent
+    AddCorreoComponent,
+    LayoutComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -55,9 +63,15 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatSlideToggleModule,
     MatSelectModule,
     MatOptionModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatSidenavModule,
+    MatListModule,
+    MatChipsModule,
+    HttpClientModule,
+    MatFormFieldModule
   ],
-  entryComponents:[AddArchivoComponent],
+  entryComponents:[],
   providers: [],
   bootstrap: [AppComponent]
 })

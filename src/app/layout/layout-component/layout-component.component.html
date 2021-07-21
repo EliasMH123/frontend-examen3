@@ -1,0 +1,10 @@
+<mat-toolbar color="warn">
+  <span> &nbsp; Desarrollo de Aplicaciones Distribuidas</span>
+  <span class="example-spacer"></span>
+  <mat-icon>account_box</mat-icon>
+  <button mat-button [matMenuTriggerFor]="menu"> {{this.nombre}} {{this.apellido}} </button>
+  <mat-menu #menu="matMenu">
+    <button (click)="logout()" mat-menu-item>Logout</button>
+  </mat-menu>
+</mat-toolbar>
+<router-outlet></router-outlet>

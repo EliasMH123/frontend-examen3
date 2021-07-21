@@ -1,0 +1,17 @@
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+mat-card{
+    width: 30%;
+}
+mat-form-field{
+    width: 100%;
+}
+button{
+    margin-left: 140px;
+}
+mat-card-title{
+    margin-left: 130px;
+}

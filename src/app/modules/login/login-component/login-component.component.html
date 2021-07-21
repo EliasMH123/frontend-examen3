@@ -3,18 +3,12 @@
     <form>
       <h2>Log In</h2>
       <mat-form-field class="full-width-input">
-        <input matInput placeholder="Username" formControlName="username" required>
-        <mat-error>
-          Please provide a valid username address
-        </mat-error>
+        <input matInput type="text" placeholder="Username" name="username" [(ngModel)]="form.username" required>
       </mat-form-field>
       <mat-form-field class="full-width-input">
-        <input matInput type="password" placeholder="Password" formControlName="password" required>
-        <mat-error>
-          Please provide a valid password
-        </mat-error>
+        <input matInput type="password" placeholder="Password" name="password" [(ngModel)]="form.password" required>
       </mat-form-field>
-      <button mat-raised-button color="primary">Login</button>
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
     </form>
   </mat-card-content>
 </mat-card>
